@@ -1,0 +1,103 @@
+.cardWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-start;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.cardWrapper img {
+  width: 15vw;
+  border-radius: 10px;
+  object-fit: fill;
+}
+
+.cardContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: baseline;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.cardContentWrapper h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.progressWrapper {
+  width: 100%;
+}
+
+.progressWrapper h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.enrolledWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.enrolledWrapper h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.enrolledWrapper img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 1;
+}
+
+.enrolledWrapper button {
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(50, 107, 255, 1);
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .cardWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardWrapper img {
+    width: 100%;
+  }
+  .cardContentWrapper {
+    align-items: center;
+  }
+  .enrolledWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .enrolledWrapper button {
+    width: 100%;
+  }
+}

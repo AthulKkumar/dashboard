@@ -1,0 +1,201 @@
+.container {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  /* height: 100vh; */
+  width: 100%;
+  /* padding: 0 20px; */
+}
+
+.dashboardWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+/* Top Nav */
+.topNavWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.topNavRight {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.topNavRight > * {
+  cursor: pointer;
+}
+
+.topNavRight button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    rgba(235, 124, 73, 1),
+    rgba(240, 79, 82, 1)
+  );
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.topNavRight img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Add Learning */
+
+.addLearningWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.addLearningWrapper h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.addLearningRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.addLearningRight button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    rgba(235, 124, 73, 1),
+    rgba(240, 79, 82, 1)
+  );
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Content */
+
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contentLeft {
+  flex: 1;
+}
+.contentRight {
+  flex: 1;
+}
+
+.contentRightWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.contentRightProgressWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.progressContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.circularProgressBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 5vw;
+  border-radius: 10px;
+}
+
+.progressContent h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.progressContent p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.pipelineWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 30vh;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+@media screen and (max-width: 1024px) {
+  .contentWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Top Nav */
+  .topNavWrapper {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  /* Add learning */
+  .addLearningWrapper {
+    flex-direction: column;
+  }
+  .addLearningButton {
+    display: none;
+  }
+  /* Content */
+  .contentRightProgressWrapper {
+    flex-direction: column;
+  }
+}
